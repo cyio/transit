@@ -1,0 +1,29 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "js/application.js", "js/translators.js", "js/event.js" ]
+   },
+   "browser_action": {
+      "default_icon": "img/icon48.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "css/contentstyle.css" ],
+      "js": [ "js/application.js", "js/contentscript.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "让划词翻译更简单",
+   "icons": {
+      "128": "img/icon128.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlGJd4J53laXBsTwDEuBVen3auZ+/XJgvAcB7jucFvjONlM7iuE2HYJXSNjWqTn5G09+hauxPk9KWx6e9Rmu6rhKGyXmORKHe2JYFxYEC9YGYKsvUz2nL7rvO55Hvr6ttFpOLLcdmYUzPJxthQRLQ3hPEcLbwowA0ntvjONmrbGjJO/j5g+nSVO7bHZPTHlsnM9TNQO46ZNTiRlqrdy/L7ITky0ETSr++hzjRBVQ7rwHIJxwvqXiy82x4NjBJpWEJcGL6rNAs6mF+RT3haM0ITnax9ecgaHcMXL3wYRrgw1oPXi99ze2sgYBU5S8vCSVjNIt3iLW9OMJZKGwyD3C6sQIDAQAB",
+   "manifest_version": 2,
+   "name": "TransIt",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "storage", "http://fanyi.youdao.com/openapi.do", "http://openapi.baidu.com/", "http://trit.herokuapp.com/api/items" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3.2"
+}

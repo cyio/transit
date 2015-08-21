@@ -1,0 +1,93 @@
+body {
+  width: 200px;
+  margin: 0;
+  padding: 7px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555; }
+
+.ng-hide {
+  display: block !important;
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
+.pull-right {
+  float: right; }
+
+label {
+  display: block; }
+
+#source {
+  -webkit-appearance: textfield;
+  border: 1px inset #e0e0e0;
+  background-color: #fefbf5;
+  resize: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555;
+  width: 100%;
+  height: 20px;
+  max-height: 80px;
+  margin: 0 0 2px 0;
+  padding: 2px 4px;
+  font-weight: bold;
+  box-sizing: border-box; }
+  #source:active, #source:focus {
+    outline: -webkit-focus-ring-color auto 3px; }
+
+.btn-translator {
+  width: 50px;
+  height: 16px;
+  margin-right: 55px;
+  background-size: 50px 16px;
+  background-repeat: no-repeat;
+  background-position: right center; }
+  .btn-translator.youdao {
+    background-image: url(../img/translators/youdao.png); }
+  .btn-translator.baidu {
+    background-size: 50px 12px;
+    background-image: url(../img/translators/baidu.png); }
+
+#result div {
+  max-height: 200px;
+  overflow: auto;
+  margin-bottom: 7px;
+  padding: 3px 6px; }
+#result .success {
+  background: #efffef;
+  color: #2B3F29; }
+#result .warning {
+  background: #FFF8DC;
+  color: #888888; }
+
+footer {
+  height: 16px; }
+
+input[type=checkbox] {
+  display: none; }
+
+input[type=checkbox] + label, .btn-options {
+  display: inline-block;
+  background-position: top left;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  opacity: 0.5;
+  cursor: pointer; }
+
+input[type=checkbox]:checked + label {
+  opacity: 0.8; }
+
+input[name=pageInspect] + label {
+  background-image: url(../img/inspect-text.png); }
+
+input[name=linkInspect] + label {
+  background-image: url(../img/inspect-link.png); }
+
+.btn-options {
+  background-image: url(../img/cog.png);
+  opacity: 0.8; }
+
+.translator-logo {
+  height: 16px; }
